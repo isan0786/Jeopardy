@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>login</servlet-name>
+        <servlet-class>jeopardy.controllers.loginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>answerServlet</servlet-name>
+        <servlet-class>jeopardy.controllers.answerSelectServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>pickQuestionServlets</servlet-name>
+        <servlet-class>jeopardy.controllers.pickQuestionServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>quitLoginWindows</servlet-name>
+        <servlet-class>jeopardy.controllers.quitLoginWindow</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>login</servlet-name>
+        <url-pattern>/mylogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>answerServlet</servlet-name>
+        <url-pattern>/myanswer</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>pickQuestionServlets</servlet-name>
+        <url-pattern>/pickQuestioner</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>quitLoginWindows</servlet-name>
+        <url-pattern>/endgame</url-pattern>
+    </servlet-mapping>
+</web-app>
